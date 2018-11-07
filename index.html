@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>study</title>
+</head>
+<body>
+    <h1>vue-study</h1>
+     <h2>項目搭建 </h2>
+     <p>：使用npm安裝 npm install –g vue-cli    vue init webpack mydemo  </p>
+     <p>
+        Project name (vuetest)
+
+        项目名称，可以自己指定，也可直接回车，按照括号中默认名字。
+        
+        Project description (A Vue.js project) 
+        
+        项目描述，也可直接点击回车，使用默认名字。
+        
+        Author
+        
+        作者，可以自己指定，也可直接回车。
+        
+        接下来会让用户选择
+        
+        Runtime + Compiler: recommended for most users 
+        
+        运行加编译，既然已经说了推荐，就选它了
+        
+        Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specificHTML) are ONLY allowed in .vue files - render functions are required elsewhere
+        
+        仅运行时，已经有推荐了就选择第一个了
+        
+        Install vue-router? (Y/n)   
+        
+        是否安装vue-router，这是官方的路由，大多数情况下都使用，这里就输入“y”后回车即可。
+        
+        Use ESLint to lint your code? (Y/n)     
+        
+        是否使用ESLint管理代码，ESLint是个代码风格管理工具，是用来统一代码风格的，并不会影响整体的运行。
+        
+        Setup unit tests with Karma + Mocha? (Y/n) 
+        
+        是否安装单元测试。
+        
+        Setup e2e tests with Nightwatch(Y/n)?    
+        
+        是否安装e2e测试。
+     </p>
+     <h2>目錄結構</h2>
+     <p>
+        bulid  
+
+        里面是一些操作文件，使用npm run *    时其实执行的就是这里的文件。
+        
+        config
+        
+        配置文件，执行文件需要的配置信息。
+        
+        src  
+        
+        资源文件，所有的组件以及所用的图片都是在这个文件夹下放着。简单看一下这个文件夹下都放了哪些东西。
+        
+        assets 
+        
+        资源文件夹，放图片之类的资源，
+        
+        components 
+        
+        组件文件夹，写的所有组件都放在这个文件夹下，
+        
+        router 
+        
+        路由文件夹，这个决定了页面的跳转规则，
+        
+        App.vue
+        
+        应用组件，所有自己写的组件，都是在这个组件之上运行了。
+        
+        main.js   
+        
+        webpack入口文件。
+     </p>
+     <h2>項目啓動</h2>
+     <p>
+         npm run dev
+     </p>
+</body>
+</html>
