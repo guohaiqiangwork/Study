@@ -1,4 +1,6 @@
 <template>
+<div>
+<h1 @click="goToProduct()">点我</h1>
  <Card style="width:350px">
         <p slot="title">
             <Icon type="ios-film-outline"></Icon>
@@ -18,6 +20,7 @@
             </li>
         </ul>
     </Card>
+    </div>
 </template>
 
 <script>
@@ -100,10 +103,14 @@ export default {
                     return return_array;
                 }
                 this.randomMovieList = getArrayItems(this.movieList, 5);
+            },
+            // 页面跳转
+             goToProduct (){
+               this.$router.push({name: '/Product',params:{ id:'1'}});
             }
         },
         mounted () {
-            this.changeLimit();
+console.log('22')
         }
     }
 </script>
