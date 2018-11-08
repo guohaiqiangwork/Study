@@ -1,6 +1,6 @@
 <template>
 <div>
-<h1 @click="goToProduct()">点我</h1>
+<h1 @click="goToProduct('跳转')">点我</h1>
  <Card style="width:350px">
         <p slot="title">
             <Icon type="ios-film-outline"></Icon>
@@ -105,11 +105,12 @@ export default {
                 this.randomMovieList = getArrayItems(this.movieList, 5);
             },
             // 页面跳转
-             goToProduct (){
-               this.$router.push({name: '/Product',params:{ id:'1'}});
+             goToProduct (id){
+               this.$router.push({name: 'Product',params: {id: id }})
             }
         },
         mounted () {
+          this.changeLimit()
 console.log('22')
         }
     }
